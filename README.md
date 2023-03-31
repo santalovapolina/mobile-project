@@ -22,11 +22,10 @@
 <a href="https://selenide.org/"><img src="images/logos/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="images/logos/Allure.svg" width="50" height="50"  alt="Allure"/></a>
 <a href="https://www.jenkins.io/"><img src="images/logos/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
-<a><img src="images/logos/Allure_TO.svg" width="50" height="50"  alt="Allure TestOps"/></a>
 <a><img src="images/logos/Appium.svg" width="50" height="50"  alt="Appium"/></a>
 <a><img src="images/logos/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 <a><img src="images/logos/Android_Studio.svg" width="50" height="50"  alt="Android_Studio"/></a>
-<a><img src="images/logos/Appium_Inspector.svg" width="50" height="50"  alt="Appium_Inspector"/></a>
+<a><img src="images/logos/Appium_Inspector.png" width="50" height="50"  alt="Appium_Inspector"/></a>
 <a><img src="images/logos/Browserstack.svg" width="50" height="50"  alt="Browserstack"/></a>
 </p>
 
