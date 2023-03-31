@@ -56,20 +56,15 @@ tasks.withType(Test) {
     }
 }
 
-task android_test(type: Test) {
+task browserstack_test(type: Test) {
     useJUnitPlatform {
         includeTags 'browserstackAndroid'
     }
 }
 
-task ios_test(type: Test) {
-    useJUnitPlatform {
-        includeTags 'browserstackIos'
-    }
-}
 
 task appium_test(type: Test) {
     useJUnitPlatform {
-        includeTags 'android'
+        includeTags 'appiumAndroid'
     }
 }
