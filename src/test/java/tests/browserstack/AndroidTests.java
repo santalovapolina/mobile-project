@@ -34,7 +34,7 @@ public class AndroidTests extends TestBase {
         });
         step("Verify search content size", () ->
                 $$(id("org.wikipedia.alpha:id/page_list_item_title"))
-                        .shouldHave(sizeGreaterThan(0)));
+                       .shouldHave(sizeGreaterThan(0)));
     }
 
     @Tag("browserstackAndroid")
@@ -52,7 +52,7 @@ public class AndroidTests extends TestBase {
                 $(id("org.wikipedia.alpha:id/view_card_header_subtitle")).click());
         step("Verify article opens with error", () ->
                 $(id("org.wikipedia.alpha:id/view_wiki_error_text"))
-                        .shouldHave(exactText("An error occurred")));
+                       .shouldHave(exactText("An error occurred")));
     }
 
     @Tag("browserstackAndroid")
@@ -62,19 +62,19 @@ public class AndroidTests extends TestBase {
     @Test
     void hideNewsCardTest() {
 
-        step("Go to In the news card options", () -> {
-            $(id("org.wikipedia.alpha:id/horizontal_scroll_list_item_text"))
-                    .shouldHave(partialText("the Academy awards"));
+        step("Go to news card options", () -> {
+            $(id("org.wikipedia.alpha:id/view_card_header_title"))
+                    .shouldHave(text("In the news"));
             $(id("org.wikipedia.alpha:id/view_list_card_header_menu")).click();
         });
-        step("Verify there is option to hide card", () ->
-                $(id("org.wikipedia.alpha:id/title"))
-                        .shouldHave(text("Hide this card")));
-        step("Verify card is hidden", () -> {
+        step("Hide card", () -> {
+            $(id("org.wikipedia.alpha:id/title"))
+                     .shouldHave(text("Hide this card"));
             $(id("org.wikipedia.alpha:id/title")).click();
-            $(id("org.wikipedia.alpha:id/horizontal_scroll_list_item_text"))
-                    .shouldBe(hidden);
-        });
+                });
+        step("Verify news card is hidden", () ->
+            $(id("org.wikipedia.alpha:id/view_list_card_list"))
+                     .shouldNotBe(visible));
     }
 
 }
