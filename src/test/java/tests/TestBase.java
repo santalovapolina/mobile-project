@@ -21,9 +21,10 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
 
-        switch (deviceHost) {
-            case "appium" -> Configuration.browser = LocalMobileDriver.class.getName();
-            case "browserstack" -> Configuration.browser = BrowserstackMobileDriver.class.getName();
+        if (deviceHost.equals("appium")) {
+            Configuration.browser = LocalMobileDriver.class.getName();
+        } else if (deviceHost.equals("browserstack")) {
+            Configuration.browser = BrowserstackMobileDriver.class.getName();
         }
 
         Configuration.timeout = 15000;
@@ -41,11 +42,10 @@ public class TestBase {
     public void afterEach() {
         String sessionId = getSessionId();
         Attach.pageSource();
+        closeWebDriver();
 
         if (deviceHost.equals("browserstack")) {
             Attach.addVideo(sessionId);
-            closeWebDriver();
-
         }
     }
 }

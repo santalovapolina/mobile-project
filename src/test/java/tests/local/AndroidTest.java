@@ -19,6 +19,7 @@ import static io.qameta.allure.Allure.step;
 
 public class AndroidTest extends TestBase {
 
+
     @BeforeEach
     void passingGettingStartedPage() {
 
@@ -57,7 +58,7 @@ public class AndroidTest extends TestBase {
     @Tag("appiumAndroid")
     @Owner(value = "Santalova Polina")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("")
+    @DisplayName("Проверка открытия статьи")
     @Test
     void openArticleTest() {
 

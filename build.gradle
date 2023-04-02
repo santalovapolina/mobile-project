@@ -3,6 +3,21 @@ plugins {
     id 'io.qameta.allure' version '2.11.2'
 }
 
+allure {
+    report {
+        version.set("2.21.0")
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set("2.21.0")
+                enabled.set(true)
+            }
+        }
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -22,22 +37,6 @@ dependencies {
             "org.slf4j:slf4j-simple:1.7.32",
             "commons-io:commons-io:2.11.0"
     )
-
-    allure {
-        version.set("2.20.1")
-        adapter {
-            allureJavaVersion.set("2.20.1")
-            aspectjVersion.set("1.9.5")
-            aspectjWeaver.set(true)
-
-            frameworks {
-                junit5 {
-                    adapterVersion.set("2.20.1")
-                    enabled.set(true)
-                }
-            }
-        }
-    }
 }
 
 tasks.withType(JavaCompile) {
@@ -58,13 +57,13 @@ tasks.withType(Test) {
 
 task browserstack_test(type: Test) {
     useJUnitPlatform {
-        includeTags ("browserstackAndroid")
+        includeTags ('browserstackAndroid')
     }
 }
 
 
 task appium_test(type: Test) {
     useJUnitPlatform {
-        includeTags ("appiumAndroid")
+        includeTags ('appiumAndroid')
     }
 }
