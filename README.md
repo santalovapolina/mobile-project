@@ -9,7 +9,7 @@
 - [Сборка в Jenkins](#bookmark--jenkins--job-)
 - [Allure отчет](#bookmark--отчет-в-allure-report)
 - [Уведомление в Telegram](#bookmark--уведомление-в-telegram)
-- [Видео прохождения тестов](#bookmark--видео-прохождения-некоторых-тестов)
+- [Видео прохождения тестов](#bookmark-видео-прохождения-тестов)
 - [Allure TestOps](#bookmark--добавление-интеграции-с-allure-testops)
 
 ## :bookmark: Технологии и инструменты
