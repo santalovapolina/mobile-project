@@ -24,9 +24,10 @@
 <a href="https://www.jenkins.io/"><img src="images/logos/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 <a><img src="images/logos/Appium.svg" width="50" height="50"  alt="Appium"/></a>
 <a><img src="images/logos/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>
-<a><img src="images/logos/Android_Studio.svg" width="50" height="50"  alt="Android_Studio"/></a>
-<a><img src="images/logos/Appium_Inspector.png" width="50" height="50"  alt="Appium_Inspector"/></a>
+<a><img src="images/logos/Android_Studio.svg" width="50" height="50"  alt="Android Studio"/></a>
+<a><img src="images/logos/Appium_Inspector.png" width="50" height="50"  alt="Appium Inspector"/></a>
 <a><img src="images/logos/Browserstack.svg" width="50" height="50"  alt="Browserstack"/></a>
+<a><img src="images/logos/Allure_TO.svg" width="50" height="50"  alt="Allure TestOps"/></a>
 </p>
 
 ## :bookmark: Запуск тестов из терминала
