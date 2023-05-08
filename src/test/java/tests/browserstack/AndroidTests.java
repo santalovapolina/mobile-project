@@ -18,14 +18,13 @@ import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
 
+@Tag("browserstackAndroid")
+@Owner("Santalova Polina")
 public class AndroidTests extends TestBase {
 
-
-    @Tag("browserstackAndroid")
-    @Owner(value = "Santalova Polina")
-    @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Проверка поиска")
     @Test
+    @DisplayName("Проверка поиска")
+    @Severity(SeverityLevel.CRITICAL)
     void searchInputTest() {
 
         step("Go to search input and type search", () -> {
@@ -37,11 +36,9 @@ public class AndroidTests extends TestBase {
                        .shouldHave(sizeGreaterThan(0)));
     }
 
-    @Tag("browserstackAndroid")
-    @Owner(value = "Santalova Polina")
-    @Severity(SeverityLevel.MINOR)
-    @DisplayName("Проверка открытия статьи с ошибкой")
     @Test
+    @DisplayName("Проверка открытия статьи с ошибкой")
+    @Severity(SeverityLevel.MINOR)
     void openArticleWithErrorTest() {
 
         step("Go to search input and type search", () -> {
@@ -55,11 +52,9 @@ public class AndroidTests extends TestBase {
                        .shouldHave(exactText("An error occurred")));
     }
 
-    @Tag("browserstackAndroid")
-    @Owner(value = "Santalova Polina")
-    @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Проверка скрытия карточки")
     @Test
+    @DisplayName("Проверка скрытия карточки")
+    @Severity(SeverityLevel.NORMAL)
     void hideNewsCardTest() {
 
         step("Go to news card options", () -> {

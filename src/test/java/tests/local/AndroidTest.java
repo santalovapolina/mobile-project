@@ -17,6 +17,8 @@ import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
 
+@Tag("appiumAndroid")
+@Owner("Santalova Polina")
 public class AndroidTest extends TestBase {
 
 
@@ -35,11 +37,9 @@ public class AndroidTest extends TestBase {
     }
 
 
-    @Tag("appiumAndroid")
-    @Owner(value = "Santalova Polina")
-    @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Проверка поиска")
     @Test
+    @DisplayName("Проверка поиска")
+    @Severity(SeverityLevel.NORMAL)
     void searchResultsSizeTest() {
 
         step("Go to search input and type search", () -> {
@@ -55,11 +55,9 @@ public class AndroidTest extends TestBase {
 
     }
 
-    @Tag("appiumAndroid")
-    @Owner(value = "Santalova Polina")
-    @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Проверка открытия статьи")
     @Test
+    @DisplayName("Проверка открытия статьи")
+    @Severity(SeverityLevel.CRITICAL)
     void openArticleTest() {
 
         step("Go to search input and type search", () -> {
@@ -79,11 +77,9 @@ public class AndroidTest extends TestBase {
 
     }
 
-    @Tag("appiumAndroid")
-    @Owner(value = "Santalova Polina")
-    @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Проверка закрытия объявления")
     @Test
+    @DisplayName("Проверка закрытия объявления")
+    @Severity(SeverityLevel.NORMAL)
     void closeAnnouncementTest() {
 
         step("Check appeared announcement", () ->
